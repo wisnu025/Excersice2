@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+<center>
+        
+    <h2 class="text">Kalkulator</h2>
+    <div class="animated zoomIn">
+    <div class="calc-body">
+        <h1 id='calcResult'></h1>
+        <table class="table-center">
+          
+            <tr>
+                <td>
+                    <input class="input-calc-tmp" id="operator" name="operator" >
+                </td>
+                <td colspan="3">
+                    <td>
+                    <input type="text" class="input-calc-tmp"  style="text-align: right;" id="tmp" name="tmp" >
+                </td>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="3"><input class="input-calc" id="calcText" name="calcText" style="text-align: right; font-size: 25px;"></td>
+                <td><button id="ce" class="input-calc" onclick="clearField()">CE</button></td>
+                <td><button id="kurang" class="input-calc" onclick="sepPad('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="satu" class="input-calc" onclick="nomor('1')">1</button></td>
+                <td><button id="dua" class="input-calc" onclick="nomor('2')">2</button></td>
+                <td><button id="tiga" class="input-calc" onclick="nomor('3')">3</button></td>
+                <td><button id="koma" onclick="nomor('.')" class="input-calc">.</button></td>
+                <td><button id="bagi" class="input-calc" onclick="sepPad('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="empat" class="input-calc" onclick="nomor('4')">4</button></td>
+                <td><button id="lima" class="input-calc" onclick="nomor('5')">5</button></td>
+                <td><button id="enam" class="input-calc" onclick="nomor('6')">6</button></td>
+                <td><button id="nol" class="input-calc" onclick="nomor('0')">0</button></td>
+                <td><button id="tambah" class="input-calc" onclick="sepPad('+')">+</button></td>
+               
+                
+            </tr>
+            <tr>
+                <td><button id="tujuh" class="input-calc" onclick="nomor('7')">7</button></td>
+                <td><button id="delapan" class="input-calc" onclick="nomor('8')">8</button></td>
+                <td><button id="sebilan" class="input-calc" onclick="nomor('9')">9</button></td>
+                <td><button id="samadengan" class="input-calc" onclick="equal()">=</button></td>
+                <td><button id="kali" class="input-calc" onclick="sepPad('*')">*</button></td>
+            </tr>
+            <tr>
+              
+                
+                
+                
+            </tr>
+        </table>
+    </div>
+</div>
+</center>
+</body>
+<script type="application/javascript" src="javaJS.js"></script>
+</html>
